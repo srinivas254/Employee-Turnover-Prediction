@@ -8,7 +8,7 @@ The dataset used in this project contains historical information about employees
 - Employee ID
 - Age
 - Gender
-- DepartmentS
+- Departments
 - promotion last 5years
 - left (a Boolean value)
 - Salary
