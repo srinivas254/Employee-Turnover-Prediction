@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Learning Prediction</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Employee Turnover Prediction</h1>
+      <input
+        type="number"
+        id="feature1"
+        placeholder="Enter the Employee's Satisfaction rate in %"
+      />
+      <input
+        type="number"
+        id="feature2"
+        placeholder="Enter the Employee's Evaluation rate in %"
+      />
+      <input
+        type="number"
+        id="feature3"
+        placeholder="Enter the Employee's Project count"
+      />
+      <input
+        type="number"
+        id="feature4"
+        placeholder="Enter the Total Working Hours in a Month"
+      />
+      <input
+        type="number"
+        id="feature5"
+        placeholder="Enter the number of years working Here"
+      />
+      <label>Did the Employee have a work accident?</label>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="accidentStatus" value="1" /> Yes
+        </label>
+        <label>
+          <input type="radio" name="accidentStatus" value="0" /> No
+        </label>
+      </div>
+      <button id="predictBtn">Predict</button>
+      <div id="result"></div>
+      <div id="customMessage"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
