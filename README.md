@@ -88,7 +88,7 @@ The web interface is built using **HTML**, **CSS**, and **JavaScript**. It is re
    ```
 5. Access the web interface at `http://127.0.0.1:5000`.
 6.  Access the get method at `http://127.0.0.1:5000/`
-    Access the post method at `http://127.0.0.1:5000/predict`
+    and Access the post method at `http://127.0.0.1:5000/predict`
 
 ## Technologies Used
 
