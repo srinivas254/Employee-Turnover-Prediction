@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c6b1b144;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 60%;
+    margin: auto;
+    background: white;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    width:100%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#customMessage {
+    background-color: #534f4f;
+    color: white;
+    padding: 10px;
+    margin-top: 1rem;
+    border-radius: 6px;
+    display: none;
+    text-align: center;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 4rem; 
+}
+
+label {
+    margin-right: 2rem;
+    margin-top: 5px;
+}
+
+label, input[type="radio"] {
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+}
+
+/* For tablet */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; 
+        padding: 15px;
+    }
+
+    input {
+        width: 95%; 
+    }
+
+    button {
+        width: 100%; 
+        margin-left: 0;
+    }
+
+    label {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+}
+
+/*For mobile phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; 
+    }
+
+    #result {
+        font-size: 1.2rem; 
+    }
+}
